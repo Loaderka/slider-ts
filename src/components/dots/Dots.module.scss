@@ -1,0 +1,26 @@
+$boxShadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+
+.dotsContainer {
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 245px / 2);
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+
+  &:not(:last-of-type) {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    box-shadow: $boxShadow;
+    transition: 0.5s;
+  }
+}
